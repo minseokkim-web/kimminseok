@@ -28,6 +28,7 @@
   filter: brightness(1.3);
 }
 
+/* ✅ 애니메이션 + 글자 잘림 방지 + 메뉴바 흔들림 방지 */
 .logo-text {
   font-size: 38px;
   font-weight: 800;
@@ -37,10 +38,9 @@
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid rgba(255,255,255,0.3);
-  
-  /* ✅ 완전한 여유로 설정 */
+
   width: 0;
-  animation: typing 2s steps(9, end) infinite alternate;
+  animation: typing 2s steps(8, end) infinite alternate;
   transition: color 0.3s ease;
 }
 
@@ -49,17 +49,19 @@
   border-right: none;
 }
 
+/* ✅ 정확히 MINSEOK이 다 나올 수 있게 고정 */
 @keyframes typing {
   from { width: 0; }
-  to { width: 240px; }  /* ✅ MINSEOK 전체 안전하게 표현 */
+  to { width: 260px; }
 }
 
+/* ✅ 이게 핵심: 메뉴바 밀림 방지용 고정 공간 확보 */
 .logo-container {
-  width: 160px; /* 너비 여유 있게 설정 */
+  width: 260px;       /* 애니메이션 최대 폭과 동일하게 */
+  min-width: 260px;
+  max-width: 260px;
   flex-shrink: 0;
-  overflow: hidden;
 }
-
 
 
 /* Fonts */
