@@ -12,8 +12,8 @@
 
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="./Favicon.png" rel="icon">
+  <link href="./Favicon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -34,36 +34,36 @@
 </head>
 
 <body class="portfolio-page">
+<header id="header" class="header d-flex align-items-center light-background sticky-top">
+  <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-  <header id="header" class="header d-flex align-items-center light-background sticky-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Kelly</h1>
+    <!-- 로고 고정 영역 -->
+    <div class="logo-container d-flex align-items-center">
+      <a href="portfolio.html" class="logo-wrap">
+        <div class="logo-stack">
+          <img src="./images/logo1.png" alt="브릿지 로고" class="bridge" />
+          <span class="logo-text">MINSEOK</span>
+        </div>
       </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" >About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="portfolio.html" class="active">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-       <div class="header-social-links">
-        <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
-      </div>
-     
-
     </div>
-  </header>
+
+    <!-- 내비게이션 -->
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="about.html">Home</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+    <div class="header-social-links">
+      <!-- SNS 아이콘 자리 -->
+    </div>
+
+  </div>
+</header>
+
+
 
   <main class="main">
 
@@ -73,7 +73,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>“직접 기획하고 제작한 프로젝트 중심 포트폴리오입니다.”</p>
+        <p>“영상 제외 직접 기획하고 제작한 프로젝트 중심 포트폴리오입니다.”</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -90,13 +90,13 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <a href="./portfolio-details-1.html"><img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt=""></a>
+              <a href="./portfolio-섬유 향수.html"><img src="./images/핸드크림-목업 1.png" class="img-fluid" alt=""></a>
               <div class="portfolio-info">
-                <h4>섬유향수 패키지</h4>
+                <h4>핸드 크림 패키지</h4>
                 <p>"새벽의 향이 베일처럼 조용히 감싸는"</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg"
+                <a href="./images/핸드크림-목업 1.png"
                 title="디자인 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-섬유 향수.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="./portfolio-섬유 향수.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -166,31 +166,31 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="./images/콜라.png" class="img-fluid" alt="">
+              <img src="./images/콜라.jpeg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>제로콜라 모션그래픽</h4>
                 <p>시원한 제로콜라 드셔볼래요 ?</p>
-                <a href="./images/콜라.png" title="Product 1" data-gallery="portfolio-gallery-product" ><i class="bi bi-zoom-in"></i></a>
+                <a href="./images/콜라.jpeg" title="Product 1" data-gallery="portfolio-gallery-product" ><i class="bi bi-zoom-in"></i></a>
                 <a href="./제로콜라.mp4"  title="video" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="./images/롯데.png" class="img-fluid" alt="">
+              <img src="./images/롯데.jpeg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>롯데시네마 모션그래픽</h4>
                 <p>혼자 영화 보는거 좋아하세요 ?</p>
-                <a href="./images/롯데.png" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="./images/롯데.jpeg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="./롯데시네마.mp4" title="video" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="./images/두둥탁.png" class="img-fluid" alt="">
+              <img src="./images/두둥.jpeg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>두둥탁 쇼 모션그래픽</h4>
                 <p>피아노쇼 감상 해주세요</p>
-                <a href="./images/두둥탁.png" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="./images/두둥.jpeg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="./두둥탁 쇼.mp4" title="video" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->

@@ -1,10 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Birthstone&family=Great+Vibes&display=swap');
 
 .birthstone-regular {
   font-family: "Birthstone", cursive;
   font-weight: 400;
   font-style: normal;
 }
+.logo-stack {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 25px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.bridge {
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: auto;
+  transition: all 0.4s ease-in-out;
+}
+
+.logo-stack:hover .bridge {
+  filter: brightness(1.3);
+}
+
+.logo-text {
+  font-size: 38px;
+  font-weight: 800;
+  color: white;
+  margin: 0;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid rgba(255,255,255,0.3);
+  
+  /* ✅ 완전한 여유로 설정 */
+  width: 0;
+  animation: typing 2s steps(9, end) infinite alternate;
+  transition: color 0.3s ease;
+}
+
+.logo-stack:hover .logo-text {
+  color: #00ffd0;
+  border-right: none;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 240px; }  /* ✅ MINSEOK 전체 안전하게 표현 */
+}
+
+.logo-container {
+  width: 160px; /* 너비 여유 있게 설정 */
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+
 
 /* Fonts */
 :root {
