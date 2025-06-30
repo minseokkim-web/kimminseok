@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Amarante&family=Birthstone&family=Great+Vibes&display=swap');
 
+/* 공통 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .birthstone-regular {
   font-family: "Birthstone", cursive;
   font-weight: 400;
@@ -74,23 +81,24 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
+  --background-color: #222222; /* Background color for the entire website, including individual sections */
+  --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
   --accent-color-kim: #222222; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --surface-color: #222222; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
   --accent-color: #34b7a7;
+  --odong-color:#ffffff;
 } 
 
  
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #444444;  /* The default color of the main navmenu links */
+  --nav-color: #222222;  /* The default color of the main navmenu links */
   --nav-hover-color: #34b7a7; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-color: #222222; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #34b7a7; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -1490,4 +1498,283 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #111; /* 혹시 안 채워지는 공간 있을 경우 대비 */
+}
+
+.image-container img {
+  height: 100%;
+  width: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+/* --- 슬라이드 이미지 아래 도트 버튼 정렬용 CSS --- */
+
+/* 이미지 감싸는 슬라이드 박스가 있을 경우 여기에 패딩 제거 */
+.swiper-slide {
+  padding-bottom: 0;
+}
+
+/* 도트 버튼 위치 조정 */
+.swiper-pagination {
+  position: relative;          /* 기존 absolute가 있으면 덮어쓰기 됨 */
+  margin-top: 16px;            /* 이미지와 도트 사이 간격 */
+  text-align: center;
+}
+
+/* 도트 버튼 기본 스타일 */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #999;
+  opacity: 0.4;
+  margin: 0 6px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* 활성화된 도트 */
+.swiper-pagination-bullet-active {
+  background: #2ce0c5;         /* 민트색 */
+  opacity: 1;
+}
+
+
+/* 이미지가 꽉 차게 하되 넘치지 않도록 */
+.slider-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* 이상한 공백 제거 */
+.slider-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+/* 이미지 텍스트 박스 위치가 잘못 잡혔을 경우 초기화 */
+.slider-caption {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5); /* 또는 배경 제거 */
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+}
+
+.image-text-container {
+  display: flex;
+  background-color: #fff; /* 전체 배경 흰색 */
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.image-box {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  background-color: #fff;
+}
+
+.text-box {
+  flex: 1;
+  padding: 40px;
+  color: #fff;
+  background-color: #1e1e1e;
+}
+
+@media (max-width: 768px) {
+  .image-text-container {
+    flex-direction: column;
+  }
+
+  .text-box {
+    padding: 20px;
+  }
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 800px; /* 원하는 통일된 높이로 맞춰주세요 */
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 20px; /* 아래 여백 */
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.image-fullscreen {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  max-width: none;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 0;
+  
+}
+
+.image-fullscreen img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  max-width: 100%; /* 절대 크기로 커지는 것 방지 */
+}
+
+
+.text-section {
+  width: 100% !important;
+  max-width: none !important;
+  padding: 40px 0;
+}
+
+
+.info-box,
+.description {
+  width: 100% !important;
+  max-width: none !important;
+  padding: 0 60px !important;   /* 좌우 여백은 보기 좋게 */
+  box-sizing: border-box;
+}
+
+.description p {
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.wide-text {
+  max-width: none !important;
+  width: 100% !important;
+  padding: 40px 60px !important;
+}
+
+.info-box {
+  width: 100% !important;
+  max-width: none !important;
+  padding: 0 60px !important;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.text-section {
+  padding: 60px 20px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.portfolio-info,
+.portfolio-description {
+  margin-bottom: 40px;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.portfolio-info ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.portfolio-info li {
+  margin-bottom: 10px;
+}
+
+/* 썸네일 기본 설정 */
+.thumbnail-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* 이미지 확대 효과 */
+.thumbnail-wrapper:hover .thumbnail-image {
+  transform: scale(1.07);
+  transition: transform 0.4s ease-in-out;
+}
+
+/* 이미지 크기 */
+.thumbnail-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* 오버레이 (어두운 반투명 효과) */
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 오버레이 텍스트 */
+.hover-text {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+/* 호버 시 나타남 */
+.thumbnail-wrapper:hover .hover-overlay {
+  opacity: 1;
+}
+
+.thumbnail-wrapper:hover .hover-text {
+  opacity: 1;
+  transform: translateY(0);
 }

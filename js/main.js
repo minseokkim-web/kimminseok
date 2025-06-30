@@ -184,3 +184,11 @@
   });
 
 })();
+
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  spaceBetween: 0,   // ✅ 경계 제거
+  loop: true,
+  effect: 'slide',
+  speed: 500,
+});
