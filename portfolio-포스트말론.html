@@ -34,33 +34,31 @@
 </head>
 
 <body class="portfolio-page">
+<header id="header" class="header d-flex align-items-center light-background sticky-top">
+  <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-  <header id="header" class="header d-flex align-items-center light-background sticky-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
-      <a href="portfolio.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename " style="color: white;">MIN</h1>
+    <div class="logo-container d-flex align-items-center">
+      <a href="index.html" class="logo-wrap">
+        <div class="logo-stack">
+          <img src="./images/logo1.png" alt="브릿지 로고" class="bridge" />
+          <span class="logo-text">MINSEOK</span>
+        </div>
       </a>
-
-      <nav id="navmenu" class="navmenu " >
-        <ul>
-          <li><a href="about.html" >Home</a></li>
-          <li><a href="portfolio.html" class="active">Portfolio</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-       <div class="header-social-links">
-        <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
-      </div>
-     
-
     </div>
-  </header>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+       
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+    <div class="header-social-links">
+      <!-- SNS 자리 -->
+    </div>
+
+  </div>
+</header>
 
   <main class="main">
 
@@ -68,18 +66,15 @@
     <section id="portfolio-details" class="portfolio-details section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>POST MALONE WORLD TOUR</h2>
-        <p>콘서트 홍보 포스터 디자인</p>
+      <div class="project-image-wrapper text-center" data-aos="fade-up">
+        <h2>VEIL DAWN</h2>
+        <p>"새벽의 향이 베일처럼 조용히 감싸는"</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
-
-          <div class="col-lg-8">
+          <div class="col-lg-12">
             <div class="portfolio-details-slider swiper init-swiper">
-
               <script type="application/json" class="swiper-config">
                 {
                   "loop": true,
@@ -95,66 +90,73 @@
                   }
                 }
               </script>
-
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="./images/포스트말론-목업-2 1.png" alt="">
-                </div>
-
-                 <div class="swiper-slide">
-                  <img src="./images/포스트말론-목업-3 1.png" alt="">
-                </div>
-
-                 <div class="swiper-slide">
-                  <img src="./images/포스트-말론-목업-4 1.png" alt="">
+              <div class="swiper-slide">
+                <div class="project-image-wrapper">
+                  <img src="./images/핸드크림-목업 1.png" alt="Project">
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
 
-          
+              <div class="swiper-slide">
+                <div class="project-image-wrapper">
+                  <img src="./images/핸드크림-목업-4 1.png" alt="Project">
+                </div>
+              </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>활용 목적 및 타깃</h3>
-              <ul>
-                <li>1. 콘서트/이벤트 브랜딩 디자인 실무 예시</li>
-                <li>2. 글로벌 음악 브랜드 대상 비주얼 디자이너 <br>
-                포트폴리오 콘텐츠</li>
-                <li>3. 아티스트 브랜딩 감각 / 무드 디렉션 연습 사례</li>
-                <li>4. 오프라인 옥외광고/도시형 버스쉘터 포스터로의 <br> 확장 가능성 고려</li>
-                
+              <div class="swiper-slide">
+               <div class="project-image-wrapper">
+                <img src="./images/썬크림-목업-3 1.png" alt="Project">
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="project-image-wrapper">
+                  <img src="./images/섬유향수-목업-2 1.png" alt="Project">
+                </div>
+              </div>
+              <section class="text-section wide-text">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- Project information 박스 -->
+          <div class="col-lg-6 col-md-8">
+            <div class="portfolio-info text-center" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <hr>
+              <ul class="list-unstyled">
+                <li><strong>제품명</strong>: VEIL DAWN (섬유향수)</li>
+                <li><strong>컨셉</strong>: 겨울 새벽의 고요함과 향의 잔잔한 여운</li>
+                <li><strong>타깃</strong>: 20~30대 감성 소비자 / 감성 뷰티 브랜드</li>
+                <li><strong>톤앤매너</strong>: 미니멀, 감성, 따뜻하고 차가운 새벽 조화</li>
+                <li><strong>컬러</strong>: 아이보리, 베이지, 연보라, 소프트 골드 계열</li>
               </ul>
             </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>설명</h2>
-              <p>
-                  이 포스터는 세계적인 아티스트 Post Malone의 2025 월드 투어 서울 공연을 가상으로 기획해 제작된
-                  콘서트 홍보용 <br> 메인 비주얼 디자인입니다.
-                  무대 조명, 아티스트의 시그니처 감성, 강렬한 흑백 톤을 중심으로
-                  공연의 에너지와 몰입감을 시각적으로 강조했습니다.
-              </p>
-            </div>
-
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>기획 의도</h2>
-              <p>
-                평소 Post Malone의 열렬한 팬으로, 첫 내한 공연도 직접 <br>관람했지만
-                그날의 티켓과 포스터가 아쉬워서, 아티스트의 무드와 무게감을 담아 제가 직접 디자인하게 되었습니다. <br>
-                강렬한 흑백 대비와 연기 효과를 활용해, 실제 무대의 생동감과 브랜드 이미지를 시각화했습니다.
-              </p>
-            </div>
-
           </div>
-
         </div>
 
+        <!-- 설명 -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-8">
+            <div class="portfolio-description text-center" data-aos="fade-up" data-aos-delay="300">
+              <h2>설명</h2>
+              <p>
+                브랜드 VEIL DAWN은 겨울 새벽의 고요함과  
+                차가운 공기 속 따뜻한 잔향을 담은 섬유향수입니다.  
+                이 프로젝트는 감성적이고 미니멀한 패키지 디자인을 통해  
+                브랜드의 분위기와 감정 전달을 극대화하는 것을 목표로 합니다.
+              </p>
+            </div>
+
+            <div class="portfolio-description text-center mt-4" data-aos="fade-up" data-aos-delay="300">
+              <h2>기획 의도</h2>
+              <p>
+                향수는 너무 진하게 느껴지고, 섬유향수도 다 거기서 거기 같았어요.  
+                그러다 문득, 겨울 새벽 공기를 마시는데 그 차갑고 맑은 느낌이 너무 좋더라고요.  
+                그 순간의 공기처럼 가볍고, 자연스럽고, 오래 머무는 향을 만들어보고 싶었습니다.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-
-    </section><!-- /Portfolio Details Section -->
-
+    </section>
   </main>
 
   <footer id="footer" class="footer light-background">

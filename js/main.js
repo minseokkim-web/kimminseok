@@ -192,3 +192,27 @@ const swiper = new Swiper('.swiper-container', {
   effect: 'slide',
   speed: 500,
 });
+
+
+AOS.init({
+  duration: 600,
+  easing: 'ease-in-out',
+  once: false,     // false여야 다시 내려도 애니메이션 됨
+  mirror: false    // 위로 올릴 땐 애니메이션 없이 자연스럽게
+});
+
+
+const targets = document.querySelectorAll('.aos-fade-up');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('aos-animate');
+      // observer.unobserve(entry.target); // 필요 시 해제
+    }
+  });
+}, {
+  threshold: 0.3
+});
+
+targets.forEach(target => observer.observe(target));
