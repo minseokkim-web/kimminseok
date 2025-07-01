@@ -1778,3 +1778,30 @@ section,
   opacity: 1;
   transform: translateY(0);
 }
+.center-image {
+  display: block;
+  margin: 40px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.description {
+  margin-top: 60px;
+}
+
+.description h2 {
+  margin-bottom: 16px;
+}
+
+.description p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #ddd;
+}
+
