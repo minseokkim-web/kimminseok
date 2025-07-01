@@ -33,38 +33,38 @@
   
 </head>
 
-<body class="portfolio-page">
+<body class="index-page">
+<header id="header" class="header d-flex align-items-center light-background sticky-top">
+  <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-  <header id="header" class="header d-flex align-items-center light-background sticky-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename " style="color: white;">MIN</h1>
+    <div class="logo-container d-flex align-items-center">
+      <a href="index.html" class="logo-wrap">
+        <div class="logo-stack">
+          <img src="./images/logo1.png" alt="브릿지 로고" class="bridge" />
+          <span class="logo-text">MINSEOK</span>
+        </div>
       </a>
-
-      <nav id="navmenu" class="navmenu " >
-        <ul>
-          <li><a href="about.html" class="active">Home</a></li>
-          <li><a href="portfolio.html" >Portfolio</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-       <div class="header-social-links">
-        <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
-      </div>
-     
-
     </div>
-  </header>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+       
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+    <div class="header-social-links">
+      <!-- SNS 자리 -->
+    </div>
+
+  </div>
+</header>
+
+
   <main class="main">
 
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="index" class="index section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -109,6 +109,30 @@
 
     </section><!-- /About Section -->
 
+    <section class="experience-section mt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div class="experience-box text-center" data-aos="fade-up" data-aos-delay="100">
+              <h3>학력 및 경력 사항</h3>
+              <hr>
+              <ul class="list-unstyled">
+                <li><strong>2017.03 - 2019.02</strong></li>
+                 <small>해운대공업고등학교 졸업</small>
+                
+                <li><strong>2019.03 - 2025.02</strong></li>
+                 <small>동의과학대학교 보건행정과 졸업</small>
+
+                <li><strong>2025.02 - 2025.07</strong></li>
+                 <small>센텀직업전문학교 디자인 헬스케어 수료</small>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <!-- Skills Section -->
     <section id="skills" class="skills section">
 
@@ -127,21 +151,21 @@
             <div class="progress">
               <span class="skill"><span>Premiere</span> <i class="val">95%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar bg-black" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" style="background-color: yellow;" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
               <span class="skill"><span>Adobe Premiere</span> <i class="val">95%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar bg-black" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" style="background-color: yellow;"  role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
               </div>     
             </div><!-- End Skills Item --> 
 
             <div class="progress">
               <span class="skill"><span>Illustration</span> <i class="val">95%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar bg-black" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" style="background-color: yellow;"  role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
@@ -152,14 +176,14 @@
             <div class="progress">
               <span class="skill"><span>Figma</span> <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" style="background-color: yellow;"  role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
               <span class="skill"><span>Photoshop</span> <i class="val">95%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar bg-black" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" style="background-color: yellow;"  role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
@@ -280,12 +304,171 @@
     <!-- </section> /Testimonials Section  -->
 
   </main>
+</header>
+
+
+
+
+  <main class="main">
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Creative Bridge</h2>
+        <p>“아이디어와 현실을 연결하는, 저만의 창의적 실험의 기록입니다.”</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">전체</li>
+            <li data-filter=".filter-app">디자인</li>
+            <li data-filter=".filter-product">영상</li>
+            <li data-filter=".filter-branding">피그마</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" data-aos="fade-up" data-aos-delay="200">
+              <a href="./portfolio-섬유 향수.html" class="thumbnail-link">
+                <div class="thumbnail-wrapper">
+                  <img src="./images/핸드크림-목업 1.png" class="img-fluid thumbnail-image" alt="썸네일" />
+                  <div class="hover-overlay">
+                    <span class="hover-text">자세히 보기</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+             <a href="./portfolio-유채꽃.html"><img src="./images/유채꽃-목업-3.png" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4>유채꽃 포스터</h4>
+                <p>"부산 유채꽃 축제에서, 당신의 봄을 피워보세요"</p>
+                <a href="./images/유채꽃-목업-3.png" title="유채꽃 포스터" data-gallery="portfolio-gallery-app"></i></a>
+                <a href="portfolio-유채꽃.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <a href="./portfolio-카드뉴스.html"><img src="./images/카드뉴스(목업)-2 1.png" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4>카드뉴스</h4>
+                <p>하품 안하면 친한 사이가 아니다 ?</p>
+                <a href="./images/카드뉴스(목업)-2 1.png" title="하품 안하면 친한 사이가 아니다 ?" data-gallery="portfolio-gallery-app"></i></a>
+                <a href="portfolio-카드뉴스.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <a href="./portfolio-리플릿.html"><img src="./images/리플릿-목업 1.png" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4>리플릿</h4>
+                <p>“슈마우스 만찬 — 매일 달라지는 20여 가지 한식 뷔페”</p>
+                <a href="./images/리플릿-목업 1.png" title="“슈마우스 만찬 — 매일 달라지는 20여 가지 한식 뷔페”" data-gallery="portfolio-gallery-app"></i></a>
+                <a href="portfolio-리플릿.html" title="More Details" class="details-link">></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <a href="./portfolio-포스트말론.html"><img src="./images/포스트-말론-목업 1.png" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4>포스트 말론 포스터</h4>
+                <p>ONE NIGHT. ONE STAGE. POST MALONE LIVE</p>
+                <a href="./images/포스트-말론-목업 1.png" title="ONE NIGHT. ONE STAGE. POST MALONE LIVE" data-gallery="portfolio-gallery-app" ></i></a>
+                <a href="portfolio-포스트말론.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <a href="./portfolio-자전거축제.html"><img src="./images/낙동강-페스티벌-목업 1.png" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4>낙동강 페스티벌 포스터</h4>
+                <p>“뛰고, 웃고, 즐겨요! 아이와 함께하는 낙동강 페스티벌!”</p>
+                <a href="./images/낙동강-페스티벌-목업 1.png" title="“뛰고, 웃고, 즐겨요! 아이와 함께하는 낙동강 페스티벌!”" data-gallery="portfolio-gallery-app"></a>
+                <a href="portfolio-자전거축제.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <a href="./portfolio-피그마.html"><img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4>키키</h4>
+                <p>“잃어버린 반려동물, 빠르게 찾을 수 있도록직관적인 UI와 기능 중심으로 설계했습니다.”</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="“잃어버린 반려동물, 빠르게 찾을 수 있도록직관적인 UI와 기능 중심으로 설계했습니다.”" data-gallery="portfolio-gallery-branding"></a>
+                <a href="portfolio-피그마.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <a href="./portfolio-제로콜라.html"><img src="./images/콜라.jpeg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4>제로콜라 모션그래픽</h4>
+                <p>시원한 제로콜라 드셔볼래요 ?</p>
+                <a href="./images/콜라.jpeg" title="Product 1" data-gallery="portfolio-gallery-product" ></a>
+                <a href="./제로콜라.mp4"  title="video" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <a href="./portfolio-롯데시네마.html"><img src="./images/롯데.jpeg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4>롯데시네마 모션그래픽</h4>
+                <p>혼자 영화 보는거 좋아하세요 ?</p>
+                <a href="./images/롯데.jpeg" title="Product 2" data-gallery="portfolio-gallery-product"></a>
+                <a href="./롯데시네마.mp4" title="video" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <a href="./portfolio-두둥탁 쇼.html"><img src="./images/두둥.jpeg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4>두둥탁 쇼 모션그래픽</h4>
+                <p>피아노쇼 감상 해주세요</p>
+                <a href="./images/두둥.jpeg" title="Product 3" data-gallery="portfolio-gallery-product"></a>
+                <a href="./두둥탁 쇼.mp4" title="video" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <a href="./portfolio-벤츠 메르세데스.html"><img src="./images/벤츠.png" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4>메르세데스 벤츠 우산 광고</h4>
+                <p>성능의 한계를 체험해보다</p>
+                <a href="./images/벤츠.png" title="Product 3" data-gallery="portfolio-gallery-product" ></a>
+                <a href="portfolio-벤츠 메르세데스.html" title="video" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+  </main>
 
   <footer id="footer" class="footer light-background">
 
     <div class="container">
       <div class="copyright text-center ">
         <p>© <span>Copyright</span> <strong class="px-1 sitename">Minseok kim</strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->

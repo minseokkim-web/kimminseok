@@ -59,7 +59,7 @@
 /* ✅ 정확히 MINSEOK이 다 나올 수 있게 고정 */
 @keyframes typing {
   from { width: 0; }
-  to { width: 260px; }
+  to { width: 195px; }
 }
 
 /* ✅ 이게 핵심: 메뉴바 밀림 방지용 고정 공간 확보 */
